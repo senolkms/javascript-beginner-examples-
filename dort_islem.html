@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<script>
+	function topla(x,y) //fonksiyon de�er al�yor ve g�nderiyor
+	{
+	   return x*1+y*1;
+	}
+	function cikar() //fonksiyon de�er alm�yor ama g�nderiyor
+	{
+	   return s1*1-s2*1;
+	}
+	function carp(x,y) //fonksiyon de�er al�yor ama g�ndermiyor
+	{
+	   document.write("Carpma Sonucu ="+x*y+"<br>");
+	   
+	}
+	function bol() //fonksiyon de�er alm�yor ve g�ndermiyor
+	{
+	   document.write("Bolme Sonucu ="+s1/s2);
+	}
+	</script>
+</head>
+
+<body>
+
+<script>
+var s1=prompt("1. Sayiyi Giriniz",1);
+var s2=prompt("2. Sayiyi Giriniz",2);
+var snc=topla(s1,s2);
+document.write("Toplam Sonucu ="+snc+"<br>");
+document.write("Cikarma Sonucu ="+cikar()+"<br>");
+carp(s1,s2);
+bol();
+</script>
+
+</body>
+</html>

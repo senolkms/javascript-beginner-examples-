@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<script>
+	function topla()
+	{
+	   document.getElementById("t3").value=document.getElementById("t1").value*1+document.getElementById("t2").value*1
+	}
+	function cikar()
+	{
+	   document.getElementById("t3").value=document.getElementById("t1").value*1-document.getElementById("t2").value*1
+	}
+	</script>
+</head>
+
+<body>
+<table border="1px" width="300px">
+	<form name="frm1" id="frm1">
+	<tr>
+		<td>1.Sayý</td>
+		<td><input type="Text" name="t1" id="t1"></td>
+	</tr>
+	<tr>
+		<td>2.Sayý</td>
+		<td><input type="Text" name="t2" id="t2"></td>
+	</tr>
+	<tr>
+		<td><p onclick="topla();">Toplama</p></td>
+		<td onclick="cikar();">Çýkarma</td>
+	</tr>
+	<tr>
+		<td>Sonuç</td>
+		<td><input type="Text" name="t3" id="t3"></td>
+	</tr>
+</form>
+</table>
+
+</body>
+</html>
